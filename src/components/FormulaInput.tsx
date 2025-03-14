@@ -139,6 +139,7 @@ const FormulaInput: React.FC = () => {
       };
 
       const newFormula = [...currentFormula];
+      // @ts-ignore
       newFormula[position] = replacementTag;
 
       useStore.setState({ formula: newFormula });
